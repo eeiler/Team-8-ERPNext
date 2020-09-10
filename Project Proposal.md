@@ -15,9 +15,12 @@ The system of interest is the ERPNext system as it is the bridge between multipl
 ## Team Motivation
 We were searching for a software that was both interesting to explore, and also rich with potential security improvements across multiple parameters. ERPNext can span across many systems in a company so it carries security issues of protecting any sensitive information that system has given to ERPNext. Erik and Jake both have previous work with SAP and as this software is the “open source alternative to SAP”, the topic of an ERP system is familiar.
 ## Project Description
-*Insert*
+ERPNext is an open source enterprise resource planning software. It is an open source alternative to SAP, the worlds largest ERP softwware. ERPNext encourages contributions from anyone looking to improve their software, documentation and community. They have a strict code of conduct for contributors and community members as to encourage a harrasment-free space for anyone. ERPNext's GitHub has over 12,000 pull requests with 30 in the last week. The community is active and is constantly improving the software. ERPNext covers a large array of modules as it is meant to span across the entire businesses processes. The core modules are Accounts, Stock, CRM, Selling, Buying, Human Resources, Projects, Support, Asset, & Quality. They are industry specific modules relating to Manufacturing, Education, Healthcare, Agriculuture, Non-Profit, & Hospitalilty. ERPNext is used by over 5000 companies worldwide. ERPNext is written with the Frappe Framework, a full-stack web app framework built with Python & JavaScript. Full [documentation](https://docs.erpnext.com/) and [user manual](https://docs.erpnext.com/docs/user/manual/en) can be found here.
 ## Licenses
-*Insert*
+ERPNext code is under the GNU General Public License v3.
+The documentation is licensed under Creative Commons CC-BY-SA-3.0.
+The copyright and trademarks for the name and logo is owned by Frappe Technologies Pvt Ltd (Frappe) and Contributors.
+
 ## Security-Related History
 *Insert*
 ## Repository Link
