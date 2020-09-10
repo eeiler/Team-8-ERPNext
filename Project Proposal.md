@@ -3,9 +3,8 @@
 This is an ERP, so it’s basically responsible for consolidating company data and providing standardized functionality needed in standard business scenarios (i.e. payroll, time management, employee data collection/storage/edits/protection, etc.) 
 We’re using Kiewit as the hypothetical client reference for this software. Beyond standard business practices, Kiewit will expect a drastic amount of integrations with both in-house and external software, meaning this software will be responsible for on-going security around the data exchanged between the applications used by the company. 
 ## System Engineering View
-![](image link)
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/System-of-Interest.png)
 The system of interest is the ERPNext system as it is the bridge between multiple elements of a business. It contains sensitive information relating to user logins, vendors, and customers. It also exchanges data with other applications used by the company it’s implemented at. For our Systems Engineering View, we made a mockup showing the hypothetical interactions ERPNext would have if implemented at Kiewit. Kiewit uses many applications from its subsidiary, InEight, which are partially developed in-house, and externally. They also use other in-house software to manage everything from payroll and time, to contracts and construction projects. Beyond that, fully external software, namely the Microsoft Suite, is also utilized and integrated with all of the aforementioned applications.
-
 ## Threats
 * Insider threats that could lead to damage of the system, and disclosure of sensitive information or company secrets.
 * Identity spoofing is a threat of a user obtaining login information of another user and acting as that person in the system.
@@ -24,7 +23,10 @@ We were searching for a software that was both interesting to explore, and also 
 ## Repository Link
 [https://github.com/eeiler/Team-8-ERPNext](https://github.com/eeiler/Team-8-ERPNext)
 ## Teamwork & Issues
-*insert*
+Our team faced moderate timing and communication issues initially. We combatted this by starting a Discord channel and scheduling weekly meetings, as well as additional working meetings, which were made possible by sharing our weekly schedules. 
+We use the weekly meetings to check up with each other and discuss what work needs to be done, and the working meetings to actually accomplish any necessary group work. 
+We also divy up work that can be completed individually during these meetings by playing to our individual strengths and schedules. 
+Moving forward, keeping these lines of communication open and being honest about our level of comfort with certain tasks is the path we see to completing a successful project for this course.
 ## Team 8
 [Erik Eiler](https://github.com/eeiler)
 [Jake Ferrin]()
