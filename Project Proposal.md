@@ -24,6 +24,6 @@ We were searching for a software that was both interesting to explore, and also 
 ## Teamwork & Issues
 *insert*
 ## Team 8
-![Erik Eiler](https://github.com/eeiler)
-![Jake Ferrin]()
-![Alexander Bladow]()
+[Erik Eiler](https://github.com/eeiler)
+[Jake Ferrin]()
+[Alexander Bladow]()
