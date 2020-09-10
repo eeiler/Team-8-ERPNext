@@ -16,7 +16,7 @@ The system of interest is the ERPNext system as it is the bridge between multipl
 We were searching for a software that was both interesting to explore, and also rich with potential security improvements across multiple parameters. ERPNext can span across many systems in a company so it carries security issues of protecting any sensitive information that system has given to ERPNext. Erik and Jake both have previous work with SAP and as this software is the “open source alternative to SAP”, the topic of an ERP system is familiar.
 ## Project Description
 *Insert*
-## Liscenses
+## Licenses
 *Insert*
 ## Security-Related History
 *Insert*
