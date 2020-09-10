@@ -28,6 +28,6 @@ We use the weekly meetings to check up with each other and discuss what work nee
 We also divy up work that can be completed individually during these meetings by playing to our individual strengths and schedules. 
 Moving forward, keeping these lines of communication open and being honest about our level of comfort with certain tasks is the path we see to completing a successful project for this course.
 ## Team 8
-[Erik Eiler](https://github.com/eeiler)
-[Jake Ferrin]()
-[Alexander Bladow]()
+[Erik Eiler](https://github.com/eeiler)  
+[Jake Ferrin]()  
+[Alexander Bladow]()  
