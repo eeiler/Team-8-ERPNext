@@ -20,7 +20,7 @@ We were searching for a software that was both interesting to explore, and also 
 ## Security-Related History
 *Insert*
 ## Repository Link
-![https://github.com/eeiler/Team-8-ERPNext](https://github.com/eeiler/Team-8-ERPNext)
+[https://github.com/eeiler/Team-8-ERPNext](https://github.com/eeiler/Team-8-ERPNext)
 ## Teamwork & Issues
 *insert*
 ## Team 8
