@@ -10,7 +10,14 @@ The system of interest is the ERPNext system as it is the bridge between multipl
 * Elevation of privilege would allow a lower access user to gain higher access levels and see information they are unintended to.
 * ERP systems store a lot of sensitive information about customers, users, and vendors. Any unauthorized disclosure of the information is a huge threat.
 ## Security Features
-*Insert*
+* User account control
+* Possible two-factor authentication implementation 
+* Automated account auditing
+* Login attempt limit and auditing
+* Protection against some forms of XSS
+* Password encryption at rest
+* Backup capacity
+* SSL certificate usage for any websites created
 ## Team Motivation
 We were searching for a software that was both interesting to explore, and also rich with potential security improvements across multiple parameters. ERPNext can span across many systems in a company so it carries security issues of protecting any sensitive information that system has given to ERPNext. Erik and Jake both have previous work with SAP and as this software is the “open source alternative to SAP”, the topic of an ERP system is familiar.
 ## Project Description
@@ -19,9 +26,12 @@ ERPNext is an open source enterprise resource planning software. It is an open s
 ERPNext code is under the GNU General Public License v3.
 The documentation is licensed under Creative Commons CC-BY-SA-3.0.
 The copyright and trademarks for the name and logo is owned by Frappe Technologies Pvt Ltd (Frappe) and Contributors.
-
 ## Security-Related History
-*Insert*
+* A number of User access control issues were closed between May 2017 up to The ninth April this year.  
+* Community information regarding Two factor authentication in 2017 was added. Dormant account notifications were added to the better on boarding milestone.  
+* Login attempt limits added on commit 0a56d63 on Aug. 11, 2018.  
+* Some XSS protections added upon as part of Pull 4560.  
+* Vulnerabilities regarding the vulnerabilities that affect acorn, minimist, and svjsl regarding CVE-2020-7598 as part of Pull #20937.
 ## Repository Link
 [https://github.com/eeiler/Team-8-ERPNext](https://github.com/eeiler/Team-8-ERPNext)
 ## Teamwork & Issues
