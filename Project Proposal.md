@@ -27,8 +27,9 @@ ERPNext code is under the GNU General Public License v3.
 The documentation is licensed under Creative Commons CC-BY-SA-3.0.
 The copyright and trademarks for the name and logo is owned by Frappe Technologies Pvt Ltd (Frappe) and Contributors.
 ## Security-Related History
-* A number of User access control issues were closed between May 2017 up to The ninth April this year.  
-* Community information regarding Two factor authentication in 2017 was added. Dormant account notifications were added to the better on boarding milestone.  
+* A number of user access control issues were closed between May 2017 - April 2020.  
+* Community information regarding two-factor authentication in 2017 was added. 
+* Dormant account notifications were added to the better on boarding milestone.  
 * Login attempt limits added on commit 0a56d63 on Aug. 11, 2018.  
 * Some XSS protections added upon as part of Pull 4560.  
 * Vulnerabilities regarding the vulnerabilities that affect acorn, minimist, and svjsl regarding CVE-2020-7598 as part of Pull #20937.
