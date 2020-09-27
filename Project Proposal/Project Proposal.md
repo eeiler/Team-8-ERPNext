@@ -2,7 +2,7 @@
 ## Hypothetical Operational Environment
 This is an ERP, so it’s basically responsible for consolidating company data and providing standardized functionality needed in standard business scenarios (i.e. payroll, time management, employee data collection/storage/edits/protection, etc.) 
 ## System Engineering View
-![](https://github.com/eeiler/Team-8-ERPNext/blob/master/System%20Engineering%20View.png)  
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Project%20Proposal/System%20Engineering%20View.png)  
 The system of interest is the ERPNext system as it is the bridge between multiple elements of a business. It contains sensitive information relating to user logins, vendors, and customers. It also exchanges data with other applications used by the company it’s implemented at. For our Systems Engineering View, we made a mockup showing the hypothetical interactions ERPNext would have if implemented at a typical company.
 ## Threats
 * Insider threats that could lead to damage of the system, and disclosure of sensitive information or company secrets.
