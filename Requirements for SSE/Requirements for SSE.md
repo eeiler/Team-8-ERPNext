@@ -1,4 +1,5 @@
-![https://github.com/eeiler/Team-8-ERPNext/blob/master/Email%20Rec%20Case.pngg]()  
+## Case 1
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Email%20Rec%20Case.png)  
 Employees using the ERPNext software must be able to communicated through email both internally and externally.  
 Email is a commonly exploited area of business for malicious attackers. The misuse case is the malicious email sender trying to spam the employee with emails that could have dangerous files inside, or be phishing for employee information.
 
