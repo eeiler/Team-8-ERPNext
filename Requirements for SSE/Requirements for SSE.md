@@ -11,7 +11,13 @@ ERPNext is clear in the [https://docs.erpnext.com/docs/user/manual/en/setting-up
 The security provided is little by ERPNext as the pass the responsibility to the mail server provider, but something they should add is a notifier flag in the email subject when it is received from outside the company. An option to notify of an important document on internal emails also would add good clarity to the email system
 ## Case 2
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/New%20item%20use%20case.png)  
+Employees using the ERPNext software must be able to add new items to the software.
+Item entry is an important vector due to its role with maintaining teh latest forms of stock, and that it has a direct line to the database that is typically less guarded than search functions and bars.
 
+The ERPNext item entry screen limits what you are able to enter into specific fields, and the ability to use other forms of input validation.
+There are not any visible recomendations for the security of new item creation.
+
+ERPNext does not provide any additioanl security requirements for Item entry screen or process. It is possible to create additional inpu tvalidation plugins through the development module. Additional input validation should added to protect against possible insider threats or adversarites that get access and do a SQL injection into the inbuilt MYSQl database. Denial of service for the item database is also a problem, but that is typically handled through the inbuilt systems for restart and backups. 
 ## Case 3
 ![]()  
 
