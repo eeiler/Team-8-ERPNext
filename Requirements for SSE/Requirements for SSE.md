@@ -10,7 +10,7 @@ ERPNext allows for pdfs of documents to be attached to emails sent through it. W
 ERPNext is clear in the [https://docs.erpnext.com/docs/user/manual/en/setting-up/email](email section) of the user manual of certain security requirements that should be handled outside of this software, such as spam filtering, SSL, and TSL. They do provide things such as attachment limiting to prevent the DoS of the ERP system.
 The security provided is little by ERPNext as the pass the responsibility to the mail server provider, but something they should add is a notifier flag in the email subject when it is received from outside the company. An option to notify of an important document on internal emails also would add good clarity to the email system
 ## Case 2
-![]()  
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/New%20item%20use%20case.pdf)  
 
 ## Case 3
 ![]()  
