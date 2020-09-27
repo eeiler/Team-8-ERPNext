@@ -42,5 +42,5 @@ We also divy up work that can be completed individually during these meetings by
 Moving forward, keeping these lines of communication open and being honest about our level of comfort with certain tasks is the path we see to completing a successful project for this course.
 ## Team 8
 [Erik Eiler](https://github.com/eeiler)  
-[Jake Ferrin]()  
-[Alexander Bladow]()  
+[Jake Ferrin](https://github.com/jferrin1996)  
+[Alexander Bladow](https://github.com/abladow)  
