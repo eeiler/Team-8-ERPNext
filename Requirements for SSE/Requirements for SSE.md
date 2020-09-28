@@ -1,24 +1,24 @@
 # Requirements for Software Security Engineering
 ## Case 1
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Email%20Rec%20Case.png)  
-Employees using the ERPNext software must be able to communicated through email both internally and externally.  
+Employees using the ERPNext software must be able to communicate through email both internally and externally.  
 Email is a commonly exploited area of business for malicious attackers. The misuse case is the malicious email sender trying to spam the employee with emails that could have dangerous files inside, or be phishing for employee information.
 
-ERPNext does use a configurable attachment limit to prevent large email sizes being used as a email DoS bomb.
+ERPNext does use a configurable attachment limit to prevent large email sizes being used as an email DoS bomb.
 ERPNext recommends for things like spam filtering, that it be done by the mail server provider external of ERPNext.
 ERPNext allows for pdfs of documents to be attached to emails sent through it. Which would be received by other employees.
 
 ERPNext is clear in the [https://docs.erpnext.com/docs/user/manual/en/setting-up/email](email section) of the user manual of certain security requirements that should be handled outside of this software, such as spam filtering, SSL, and TSL. They do provide things such as attachment limiting to prevent the DoS of the ERP system.
-The security provided is little by ERPNext as the pass the responsibility to the mail server provider, but something they should add is a notifier flag in the email subject when it is received from outside the company. An option to notify of an important document on internal emails also would add good clarity to the email system
+The security provided is little by ERPNext as they pass the responsibility to the mail server provider, but something they should add is a notifier flag in the email subject when it is received from outside the company. An option to notify of an important document on internal emails also would add good clarity to the email system.
 ## Case 2
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/New%20item%20use%20case.png)  
 Employees using the ERPNext software must be able to add new items to the software.
 Item entry is an important vector due to its role with maintaining teh latest forms of stock, and that it has a direct line to the database that is typically less guarded than search functions and bars.
 
 The ERPNext item entry screen limits what you are able to enter into specific fields, and the ability to use other forms of input validation.
-There are not any visible recomendations for the security of new item creation.
+There are not any visible recommendations for the security of new item creation.
 
-ERPNext does not provide any additioanl security requirements for Item entry screen or process. It is possible to create additional inpu tvalidation plugins through the development module. Additional input validation should added to protect against possible insider threats or adversarites that get access and do a SQL injection into the inbuilt MYSQl database. Denial of service for the item database is also a problem, but that is typically handled through the inbuilt systems for restart and backups. 
+ERPNext does not provide any additional security requirements for Item entry screen or process. It is possible to create additional input validation plugins through the development module. Additional input validation should be added to protect against possible insider threats or adversaries that get access and do a SQL injection into the inbuilt MYSQL database. Denial of service for the item database is also a problem, but that is typically handled through the inbuilt systems for restart and backups. 
 ## Case 3
 ![]()  
 
@@ -27,6 +27,8 @@ ERPNext does not provide any additioanl security requirements for Item entry scr
 
 ## Open Source Software Project Documentation Security Issues
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Doc%20search%20issue.png)
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Doc%20search%20issue%202.png)  
+These two issues are found in the user manual documentation for ERPNext. When searching certain syntax and functions you can see that it is displayed in the search bar. This should be fixed just do not show too much coding functionality as that can lead to vulnerabilities being found.
 ## Teamwork
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/1)  
 We decided to get started early in the week on the use cases. This allowed us to use our team checkup to review how the cases should be done. We struggled to get a strong grasp on the cases at first, so we asked questions in a meeting with our professor and studied the lecture again before meeting to work on the cases again. We plan to continue starting early in the week, so we can get any questions and feedback at our checkup meetings. We also ran into scheduling issues this week. There are a lot of moving parts to scheduling around even 3 team members. We plan to talk through our schedules at the start of the week more, as to plan a more efficient schedule.
