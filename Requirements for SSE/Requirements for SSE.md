@@ -25,6 +25,8 @@ ERPNext does not provide any additioanl security requirements for Item entry scr
 ## Case 4 
 ![]()  
 
+## Open Source Software Project Documentation Security Issues
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Doc%20search%20issue.png)
 ## Teamwork
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/1)  
 We decided to get started early in the week on the use cases. This allowed us to use our team checkup to review how the cases should be done. We struggled to get a strong grasp on the cases at first, so we asked questions in a meeting with our professor and studied the lecture again before meeting to work on the cases again. We plan to continue starting early in the week, so we can get any questions and feedback at our checkup meetings. We also ran into scheduling issues this week. There are a lot of moving parts to scheduling around even 3 team members. We plan to talk through our schedules at the start of the week more, as to plan a more efficient schedule.
