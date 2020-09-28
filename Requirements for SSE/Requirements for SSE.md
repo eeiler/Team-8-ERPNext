@@ -20,10 +20,11 @@ There are not any visible recommendations for the security of new item creation.
 
 ERPNext does not provide any additional security requirements for Item entry screen or process. It is possible to create additional input validation plugins through the development module. Additional input validation should be added to protect against possible insider threats or adversaries that get access and do a SQL injection into the inbuilt MYSQL database. Denial of service for the item database is also a problem, but that is typically handled through the inbuilt systems for restart and backups. 
 ## Case 3
-![]()  
-
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Encrypted%20Info.PNG)  
+ERPNext approaches server side security by both encrypting data and banning suspicious or known malicious IP addresses. It does this automatically using Fail2ban and LetsEncrypt. 
+Employees of organizations utilizing ERPNext can provide their financial information knowing it will be encrypted at all times and shielded from malicious IP addresses. The good thing for the organization is LetsEncrypt is free, so they don't have to account for any additional costs or fees to conduct payroll and other practices that utilize confidential information securely. 
 ## Case 4 
-![]()  
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/User%20Login.PNG)  
 
 ## Open Source Software Project Documentation Security Issues
 These two issues are found in the user manual documentation for ERPNext. When searching certain syntax and functions you can see that it is displayed in the search bar. This should be fixed just do not show too much coding functionality as that can lead to vulnerabilities being found. Examples are shown below: 
