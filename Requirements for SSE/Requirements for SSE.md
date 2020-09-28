@@ -22,10 +22,13 @@ ERPNext does not provide any additional security requirements for Item entry scr
 ## Case 3
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Encrypted%20Info.PNG)  
 ERPNext approaches server side security by both encrypting data and banning suspicious or known malicious IP addresses. It does this automatically using Fail2ban and LetsEncrypt. 
+
 Employees of organizations utilizing ERPNext can provide their financial information knowing it will be encrypted at all times and shielded from malicious IP addresses. The good thing for the organization is LetsEncrypt is free, so they don't have to account for any additional costs or fees to conduct payroll and other practices that utilize confidential information securely. 
 ## Case 4 
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/User%20Login.PNG)  
+While modern hackers have many options when it comes to password cracking as seen in the misuse case above (i.e. Brute Force, Guesswork, Malicious Password Recovery), ERPNext takes a couple pretty standard measures to make sure their users don't fall victim to them. Both forced lockout after X attempts and forced password reset, both optional settings (https://erpnext.com/security/frappe-hosting), give organizations the power to make any of the aforementioned attacks very hard, if not impossible.
 
+Setting up a bot to fill in random passwords until it cracks the user's account won't work if the account after a couple tries. Similarly, the hacker would have to do some impressive guesswork to get in in the same amount of tries. Granted, a hacker abusing password recovery systems has the best shot against these defences, but common resets still make their job that much harder. These settings should deter the typical hacker.
 ## Open Source Software Project Documentation Security Issues
 These two issues are found in the user manual documentation for ERPNext. When searching certain syntax and functions you can see that it is displayed in the search bar. This should be fixed just do not show too much coding functionality as that can lead to vulnerabilities being found. Examples are shown below: 
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Doc%20search%20issue.png)
