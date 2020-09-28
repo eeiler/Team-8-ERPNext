@@ -1,3 +1,4 @@
+# Requirements for Software Security Engineering
 ## Case 1
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Email%20Rec%20Case.png)  
 Employees using the ERPNext software must be able to communicated through email both internally and externally.  
