@@ -3,7 +3,8 @@ This is the repository for Team 8 in the Software Assurance class at the Univers
 
 ## Deliverables
 [Project Proposal](https://github.com/eeiler/Team-8-ERPNext/blob/master/Project%20Proposal/Project%20Proposal.md)  
-[Requirements for SSE](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Requirements%20for%20SSE.md)
+[Requirements for SSE](https://github.com/eeiler/Team-8-ERPNext/blob/master/Requirements%20for%20SSE/Requirements%20for%20SSE.md)  
+[Assurance Cases](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Cases.md)  
 
 ## Contributors
 [Erik Eiler](https://github.com/eeiler)  
