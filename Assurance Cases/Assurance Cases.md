@@ -20,6 +20,7 @@ E3: ERPnext has its Github page submitions reviewed before implementation as sho
 ### ERPNext provides file change management
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/change%20management%20case.png)  
 ### Evidence
+E1: ERPNext offers a document timeline that was added in [release #5](https://github.com/frappe/erpnext/wiki/Version-5-Release-Notes). This allows file owners and administrators to see what events have happend over a specific document
 ## Claim 4
 ### ERPNext sufficiently negates malicious packet sniffing software usage
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case%20-%20Packet%20Sniffing.PNG)  
