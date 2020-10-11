@@ -9,7 +9,7 @@ E3: Brute force or guesswork attacks would take too long to crack a password whi
 E4: ERPNext has configurable [password policy](https://docs.erpnext.com/docs/user/manual/en/setting-up/settings/system-settings#16-password) allowing the administrators to require strong passwords for all users. This will drastically reduce likelihood of brute force or guesswork attacks on the passwords of their users.  
 ## Claim 2
 ### ERPNext has acceptable amounts of UAC
-![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/UAC%20case.png)  
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/UAC%20case1.png)  
 ### Evidence
 ## Claim 3
 ### ERPNext provides file change management
