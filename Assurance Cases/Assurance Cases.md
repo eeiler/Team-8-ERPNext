@@ -11,6 +11,11 @@ E4: ERPNext has configurable [password policy](https://docs.erpnext.com/docs/use
 ### ERPNext has acceptable amounts of UAC
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/UAC%20case1.png)  
 ### Evidence
+E1: ERPNext has the capacity for administrators to limit which modules given users are capable of accessing per [release notes 5](https://github.com/frappe/erpnext/wiki/Version-5-Release-Notes).
+
+E2: ERPNext offers [user](https://docs.erpnext.com/docs/user/manual/en/setting-up/users-and-permissions/user-permissions) and [role](https://docs.erpnext.com/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions) based file permissions. This allows for Administrators to limit which user have access to which file based on who they are and which role they have.
+
+E3: ERPnext has its Github page submitions reviewed before implementation as show by a number of denied changes. This allows the primary developers to control what gets added and what does not making sure that bad actors do not compromise the main code.
 ## Claim 3
 ### ERPNext provides file change management
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/change%20management%20case.png)  
