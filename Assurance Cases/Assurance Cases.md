@@ -1,16 +1,16 @@
 # Assurance Cases
 ## Claim 1
-### [insert claim]
-![insert chart]()
+### ERPNext protects against password cracking
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case_%20Password%20Cracking.png)  
 ## Claim 2
 ### [insert claim]
-![insert chart]()
+![]()  
 ## Claim 3
 ### [insert claim]
-![insert chart]()
+![]()  
 ## Claim 4
-### [insert claim]
-![insert chart]()
+### ERPNext sufficiently negates malicious packet sniffing software usage
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case%20-%20Packet%20Sniffing.PNG)  
   
 # Part 2
 ### Assess the alignment of the evidence you identified in your diagrams, with that available (or can be made available) from the OSS project. Highlight the gaps.
