@@ -29,7 +29,9 @@ E1: Fail2ban tracks IP addresses that make frequent or abnormal requests and aut
 E2: Fail2ban is only one part of the two part protection used. Even if the IP gets packets before it gets blocked, they will be encrypted by LetsEncrypt, the latter part of the protection.
 E3: LetsEncrypt keeps all plans of action for different scenarios in their Policy and Legal Repository: https://letsencrypt.org/repository/
 E4: LetsEncrypt checks for websites using malware with Google's Safe Browsing API before issuing certificates.
+
 E5: LetsEncrypt uses 4096 bit RSA encryption for their security key. The biggest key cracked by the best quantum computers today is 6 bit, so we are a long ways from decrypting 4096 bit encryption. https://www.quintessencelabs.com/blog/breaking-rsa-encryption-update-state-art/
+
 E6: Referencing E5, even if a computer like this does come about in the next 20 years, it's unlikely it would be in the hands of a hacker using something as remidial as packet sniffing software, and our level of encryption will probably also improve by then.
 # Part 2
 ### Teamwork
