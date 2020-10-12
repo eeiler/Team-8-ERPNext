@@ -23,7 +23,7 @@ E3: ERPnext has its Github page submitions reviewed before implementation as sho
 E1: ERPNext offers a document timeline that was added in [release #5](https://github.com/frappe/erpnext/wiki/Version-5-Release-Notes). This allows file owners and administrators to see what events have happend over a specific document
 ## Claim 4
 ### ERPNext sufficiently negates malicious packet sniffing software usage
-![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case%20-%20Packet%20Sniffing.PNG)  
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case%20-%20Packet%20Sniffing.png)  
 ### Evidence
 # Part 2
 ### Assess the alignment of the evidence you identified in your diagrams, with that available (or can be made available) from the OSS project. Highlight the gaps.
