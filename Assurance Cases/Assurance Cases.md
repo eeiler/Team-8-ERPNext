@@ -4,8 +4,11 @@
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case_%20Password%20Cracking.png)  
 ### Evidence
 E1: ERPNext offers [configurable IP addresses](https://docs.erpnext.com/docs/user/manual/en/setting-up/users-and-permissions/adding-users#28-security-settings). This allows administrators using the software to approve only company IP addresses. This can halt outside attacks by not allowing them access to the system. IP addresses are unique so another device should not be able to use the approved address once it is in use.  
+
 E2: The IP addresses should only be added when a new one is needed, leaving no extra IPs unused that could be exploited to gain access to the system.  
+
 E3: Brute force or guesswork attacks would take too long to crack a password while not getting locked out as ERPNext offers [forced password resets](https://docs.erpnext.com/docs/user/manual/en/setting-up/settings/system-settings#16-password) after a configured time. Recommended time is a month, which would likely stop an attack on a strong password even without the lock out time.  
+
 E4: ERPNext has configurable [password policy](https://docs.erpnext.com/docs/user/manual/en/setting-up/settings/system-settings#16-password) allowing the administrators to require strong passwords for all users. This will drastically reduce likelihood of brute force or guesswork attacks on the passwords of their users.  
 ## Claim 2
 ### ERPNext has acceptable amounts of UAC
@@ -28,9 +31,13 @@ E1: ERPNext offers a document timeline that was added in [release #5](https://gi
 E1: Fail2ban tracks IP addresses that make frequent or abnormal requests and automatically bans them.
 
 E2: Fail2ban is only one part of the two part protection used. Even if the IP gets packets before it gets blocked, they will be encrypted by LetsEncrypt, the latter part of the protection.
+
 E3: LetsEncrypt keeps all plans of action for different scenarios in their Policy and Legal Repository: https://letsencrypt.org/repository/
+
 E4: LetsEncrypt checks for websites using malware with Google's Safe Browsing API before issuing certificates.
+
 E5: LetsEncrypt uses 4096 bit RSA encryption for their security key. The biggest key cracked by the best quantum computers today is 6 bit, so we are a long ways from decrypting 4096 bit encryption. https://www.quintessencelabs.com/blog/breaking-rsa-encryption-update-state-art/
+
 E6: Referencing E5, even if a computer like this does come about in the next 20 years, it's unlikely it would be in the hands of a hacker using something as remidial as packet sniffing software, and our level of encryption will probably also improve by then.
 # Part 2
 ### Teamwork
