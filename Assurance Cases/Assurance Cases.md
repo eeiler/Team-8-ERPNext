@@ -25,8 +25,14 @@ E1: ERPNext offers a document timeline that was added in [release #5](https://gi
 ### ERPNext sufficiently negates malicious packet sniffing software usage
 ![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Assurance%20Cases/Assurance%20Case%20-%20Packet%20Sniffing.png)  
 ### Evidence
+E1: Fail2ban tracks IP addresses that make frequent or abnormal requests and automatically bans them.
+E2: Fail2ban is only one part of the two part protection used. Even if the IP gets packets before it gets blocked, they will be encrypted by LetsEncrypt, the latter part of the protection.
+E3: LetsEncrypt keeps all plans of action for different scenarios in their Policy and Legal Repository: https://letsencrypt.org/repository/
+E4: LetsEncrypt checks for websites using malware with Google's Safe Browsing API before issuing certificates.
+E5: LetsEncrypt uses 4096 bit RSA encryption for their security key. The biggest key cracked by the best quantum computers today is 6 bit, so we are a long ways from decrypting 4096 bit encryption. https://www.quintessencelabs.com/blog/breaking-rsa-encryption-update-state-art/
+E6: Referencing E5, even if a computer like this does come about in the next 20 years, it's unlikely it would be in the hands of a hacker using something as remidial as packet sniffing software, and our level of encryption will probably also improve by then.
 # Part 2
-### Assess the alignment of the evidence you identified in your diagrams, with that available (or can be made available) from the OSS project. Highlight the gaps.
 ### Teamwork
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/3)
-### Include a reflection of your teamwork for this assignment. What issues occurred? How did you resolve them? What did you plan to change moving forward? 
+### Reflection
+We ran into more challenges this week than any of the previous. First off, due to busy schedules, we were never able to meet as an entire team. We made do by keeping the communication up in the chat on our Discord channel, but it wasn't a perfect substitute for meeting in person or virtually. This is especially true when considering the second problem, that we had the least understanding about this assignment as compared to all of the previous. Moving forward, we need to do better to make sure we have a full and complete grasp on the previous week's module as a team before heading into the week of creating the deliverable. We also need to make sure to find time to meet in person at least once, preferably twice. Last but not least, one skill we developed as a team this time around was establishing that it is okay to reach out to eachother when we're stuck, rather than doing all of our work outside of meetings in silos. Keeping communication open in that way allowed us to push through the major roadblocks we ran into on this go and is something we plan to continue moving forward.
