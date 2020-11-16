@@ -23,9 +23,9 @@ Observations: We did not find documentation on any logging happening by ERPNext 
 ### Spoofing
 Threats numbers from the above report:  17, 19  
 Observations: The Spoofing threats that we have to look into are regarding the email services, primarily because they require the usage of an outside software and or provider.  This include the spoofing of both the data going to and coming from the email system. These breachs would allow the access of unauthorized data either being gathered or inserted into the data flow or storage.
-### Escalation of Priviledge
+### Escalation of Privilege
 Threats numbers from the above report:  20  
-Observations: The Escalation of privilage problem we will have to look into is regarding Cross-site request forgery in regards to the email service, becasue we were unable to find any documentation of XSRF protection within ERPNext as of yet, and the email service should be the one providing security.
+Observations: The escalation of privilege problem we will have to look into is regarding Cross-site request forgery in regards to the email service, because we were unable to find any documentation of XSRF protection within ERPNext as of yet, and the email service should be the one providing security.
 ## Teamwork
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/4)   
 For this deliverable we all worked together on the data flow diagram as it was only one big diagram. We screenshared in a Discord call for ease of communication. We then went through each threat identified by TMT and talked through the correct current state of the threats. The threats that needed investigation were identified, separated into categories, and divided up for each of us to write our observations. Erik handled the Repudiation category; Jake handled the Denial of Service category; Alex handled the Spoofing and Escalation of Privilege category. This allowed us to fairly distribute the work while still having communication on the observations of the TMT. In terms of time management, we were slow this week, but planned work time for us all to work together to get the deliverable handled. We aim to be better prepared for the next deliverable, especially utilizing the instructor meeting more effectively.
