@@ -22,9 +22,11 @@ Threats numbers from the above report: 38, 51
 Observations: We did not find documentation on any logging happening by ERPNext at the authentication of user logins. Logging the interactions of the authentication process and the data store would ensure that nothing is being written. This credentials data store will need to be written onto only when a new employee is added. That should be specifically handled by and administrator and enforced by User Access Controls of which ERPNext system has. So logging any interaction would ensure correct system function and make sure only valid users are being written into the data store.
 ### Spoofing
 Threats numbers from the above report:  17, 19
+
 Observations: The Spoofing threats that we have to look into are regarding the email services, primarily because they require the usage of an outside software and or provider.  This include the spoofing of both the data going to and coming from the email system. These breachs would allow the access of unauthorized data either being gathered or inserted into the data flow or storage.
 ### Escalation of Priviledge
 Threats numbers from the above report:  20
+
 Observations: The Escalation of privilage problem we will have to look into is regarding Cross-site request forgery in regards to the email service, becasue we wer unable to find any documentation of XSRF protection within ERPNext as of yet, and the email service should be the one providing security.
 ## Teamwork
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/4)   
