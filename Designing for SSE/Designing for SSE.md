@@ -11,10 +11,10 @@ Observations:
 Threats numbers from the above report: 2, 12, 38, 51  
 Observations:
 ### Spoofing
-Threats numbers from the above report:  
+Threats numbers from the above report:  17, 19
 Observations:
 ### Escalation of Priviledge
-Threats numbers from the above report:  
+Threats numbers from the above report:  20
 Observations:
 ## Teamwork
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/4) 
