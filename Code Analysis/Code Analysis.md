@@ -5,7 +5,7 @@ Our strategy for this code analysis was to focus on the areas of ERPNext that we
 ### Manual Code Review
 Going into our manual code review, we created the following CWE checklist so we had concise things to look for in the aforementioned potentially vulnerable areas. Keeping this checklist at the forefront of our process allowed us to move efficiently and effectively through the code base, which led to more concise results than we could've hoped for otherwise. To create the checklist, we compared potential vulnerabilities from our previous deliverables to the [most common CWE's](https://cwe.mitre.org/top25/archive/2020/2020_cwe_top25.html) in an effort to leverage lessons already learned by others in the industry and focus our efforts on the most fruitful areas we could.
 
-#### CWE Checklist
+#### CWE Checklist <sub><sup>(*Signifies non-applicable CWE's, reason listed following the given CWE)</sup></sub>
 1.	Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 2.	Out-of-bounds Write  
 Only affects C, C++, and Assembly class.  
@@ -16,8 +16,8 @@ Only affects C and C++.
 Only affects C, C++, and Assembly class.  
 6.	Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 7.	Exposure of Sensitive Information to an Unauthorized Actor
-Use After Free*  
-8.	Only affects C and C++.  
+8. Use After Free*  
+Only affects C and C++.  
 9.	Cross-Site Request Forgery
 10.	Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 11.	Integer Overflow or Wraparound*  
