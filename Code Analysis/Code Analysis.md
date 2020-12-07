@@ -7,39 +7,25 @@ CWE Checklist
 
 Going into our manual code review, we created the following CWE checklist so we had concise things to look for in the aforementioned potentially vulnerable areas. Keeping this checklist at the forefront of our process allowed us to move efficiently and effectively through the code base, which led to more concise results than we could've hoped for otherwise. To create the checklist, we compared potential vulnerabilities from our previous deliverables to the [most common CWE's](https://cwe.mitre.org/top25/archive/2020/2020_cwe_top25.html) in an effort to leverage lessons already learned by other in the industry and focus our efforts on the most fruitful areas we could.
 
-1. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')	-
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sanitization for XSS handled in another section per Pull #4560
-
+1. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sanitization for XSS handled in another section per Pull #4560.
 2. Improper Input Validation
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Input within Password.py
-
 3. Out-of-bounds Read*
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.
-
 4. Improper Restriction of Operations within the Bounds of a Memory Buffer*
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C, C++, and Assembly class.
-
-5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')	-
+5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 6. Exposure of Sensitive Information to an Unauthorized Actor
 7. Use After Free*
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.
-
 8. Cross-Site Request Forgery
 9. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 10. Integer Overflow or Wraparound*
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integer overflow is not an issue in Python as Python automatically expands variables when they grow too large for their current state.
-
-11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')-
+11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
 12. NULL Pointer Dereference*
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C, C++, Java, C#.
-
 13. Improper Authentication
 14. Unrestricted Upload of File with Dangerous Type
 15. Incorrect Permission Assignment for Critical Resource
