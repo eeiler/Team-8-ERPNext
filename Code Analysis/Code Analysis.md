@@ -12,6 +12,9 @@ Going into our manual code review, we created the following CWE checklist so we 
 Sanitization for XSS handled in another section per Pull #4560
 
 2. Improper Input Validation
+
+No Input within Password.py
+
 3. Out-of-bounds Read*
 
 Only affects C and C++.
