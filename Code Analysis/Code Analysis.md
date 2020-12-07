@@ -63,6 +63,7 @@ Only affects C, C++, Java, C#.
 * (24) Possible issues regarding the password management function could be research further
 * (25) No resources that require Authorization checking with in the file
 
+Keyfindings: I found that a alot of the resources and input validation is handled via other files or the frappe packages, and some of the functions require further investigation within the frappe packages, and support files on whether the correct authentication is checked, in addition to the result of various thrown errors and logs. 
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
 
