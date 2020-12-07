@@ -78,13 +78,13 @@ Only affects C, C++, Java, C#.
 * (16) Not applicable. No resources accessible through this component.
 * (17) Not applicable. No downstream elements to neutralize or not neutralize for.
 * (18) While this code does give a decent amount of feedback that could potentially help someone trying to bruteforce guess a user's password, the likelihood they would get enough information to guess the stronger password the user selects due to the feedback is incredibly low. That said, if the user ignores the feedback this program provides, such as, "Common names and surnames are easy to guess" and proceeds while being recorded or watched in some capacity by the malicious player, it could be an issue. However, I would put that error more on the user's side than the program's.
-* (19) 
-* (20) 
-* (21) 
-* (22) 
-* (23) 
-* (24) 
-* (25) 
+* (19) Not applicable. This code does not accept XML input.
+* (20) This code does not contain or provide functionality to create hardcoded credentials.
+* (21) Not applicable. Limited data is exchanged by this program.
+* (22) Not applicable. This code does not deal with privilege assignment or management.
+* (23) This code does have some functionality for limiting repeated characters or sequences, but not for limiting the size of input completely. However, that's handled prior to reaching this code by having a limited set of character input allowed in the password form on the frontend. Pass.
+* (24) Not applicable. Not a critical function. Not in need of authentication.
+* (25) Not applicable. Not in need of authorization.
   
 ### Automated Code Review with Sonarcloud
 Sonarcloud is the automated tool I, Erik, chose to use for scanning specific code areas for vulnerabilities. As some of our assurance cases and use/misuse cases focused on passwords, I focused this scan to the code integral to password security. ERPNext is built upon the frappe framework.This framework houses all of the code related to authentication, password policy enforcement, and brute force password security. These reports, linked below, are scanned using Sonarcloud. I have scanned the main Python files that handle authentication, passwords, and the enforcement of a password policy.  
@@ -103,6 +103,7 @@ In the summary of the Sonarcloud reports, I went through each flag that was rais
 
 I found that a lot of the resources and input validation is handled via other files or the frappe packages, and some of the functions require further investigation within the frappe packages and support files on whether the correct authentication is checked, in addition to the result of various thrown errors and logs.  
 
+The password strength file didn't present any major issues related to the CWE checklist we did our manual analysis with. It was a well written, well commented program that mainly acheived its purpose in encouraging users to create strong passwords without compromising them to malicious players in the process.
 
 ### Planned Contributions
 We believe the rewriting of the literal as a constant in the auth.py file is a notable contribution that this team can make. It may seem like a smaller change, but many small changes can easily add up. Especially if someone is able to make a necessary change in one spot rather than eight. This contribution will be done by our team writing in the new constant and referencing the constant anywhere that the literal was being used. It will then be explained and sent in a pull request to the main codebase for approval.
