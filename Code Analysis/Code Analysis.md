@@ -9,36 +9,36 @@ Going into our manual code review, we created the following CWE checklist so we 
 
 1. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')	-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sanitization for XSS handled in another section per Pull #4560
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sanitization for XSS handled in another section per Pull #4560
 
 2. Improper Input Validation
 
-No Input within Password.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Input within Password.py
 
 3. Out-of-bounds Read*
 
-Only affects C and C++.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.
 
 4. Improper Restriction of Operations within the Bounds of a Memory Buffer*
 
-Only affects C, C++, and Assembly class.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C, C++, and Assembly class.
 
 5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')	-
 6. Exposure of Sensitive Information to an Unauthorized Actor
 7. Use After Free*
 
-Only affects C and C++.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.
 
 8. Cross-Site Request Forgery
 9. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 10. Integer Overflow or Wraparound*
 
-Integer overflow is not an issue in Python as Python automatically expands variables when they grow too large for their current state.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integer overflow is not an issue in Python as Python automatically expands variables when they grow too large for their current state.
 
 11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')-
 12. NULL Pointer Dereference*
 
-Only affects C, C++, Java, C#.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C, C++, Java, C#.
 
 13. Improper Authentication
 14. Unrestricted Upload of File with Dangerous Type
