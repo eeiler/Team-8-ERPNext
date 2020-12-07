@@ -40,9 +40,11 @@ Only affects C, C++, Java, C#.
 
 [Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)
 
-* Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
-* No Input within Password.py  
-* Password.py does not handle any direct interactions with SQL databases
+* 1.Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
+* 2.No Input within Password.py  
+* 5.Password.py does not handle any direct interactions with SQL databases
+* 6.requires additional research into thrown exceptions for Frappe, adn where paraticular varibles are shown in error logs
+* 8. Does not interact with a web server directly, works though other programs for validation
 
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
