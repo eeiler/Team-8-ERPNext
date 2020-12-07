@@ -40,7 +40,7 @@ Only affects C, C++, Java, C#.
 
 [Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)  
 
-&nbsp;&nbsp;&nbsp;&nbsp;(CWE Reference)
+&nbsp;&nbsp;&nbsp;&nbsp;<sub>(CWE Reference)</sub>
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
 * (2) No Input within Password.py  
 * (5) Password.py does not handle any direct interactions with SQL databases
