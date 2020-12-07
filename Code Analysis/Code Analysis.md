@@ -14,23 +14,28 @@ Going into our manual code review, we created the following CWE checklist so we 
 3. Out-of-bounds Read*
 
 Only affects C and C++.
+
 4. Improper Restriction of Operations within the Bounds of a Memory Buffer*
 
 Only affects C, C++, and Assembly class.
+
 5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')	-
 6. Exposure of Sensitive Information to an Unauthorized Actor
 7. Use After Free*
 
 Only affects C and C++.
+
 8. Cross-Site Request Forgery
 9. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 10. Integer Overflow or Wraparound*
 
 Integer overflow is not an issue in Python as Python automatically expands variables when they grow too large for their current state.
+
 11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')-
 12. NULL Pointer Dereference*
 
 Only affects C, C++, Java, C#.
+
 13. Improper Authentication
 14. Unrestricted Upload of File with Dangerous Type
 15. Incorrect Permission Assignment for Critical Resource
