@@ -69,15 +69,15 @@ Only affects C, C++, Java, C#.
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560
 * (3)The Password_Strength file focuses mainly on ensuring the user isn't picking a 'weak' password, which it's judging off of things like length, commonality, character use, and frequently used portions like recent dates and common words or phrases. That said, there is no automated input validation in the code of this file. However, the user input to this file is inoperable, or at least the code doesn't take it and execute it in anyway, so I would say this file clears the mark on this CWE.
 * (6) No SQL is requested or made possible to recieve in the code of this file. Pass.
-* (7) 
-* (9) 
-* (10) 
-* (12) 
-* (14) 
-* (15) 
-* (16) 
-* (17) 
-* (18) 
+* (7) This code, being that it only comments on current user input, does not pose a large risk for releasing sensitive information to non-authorized users.
+* (9) This code does not recieve requests, therefor it is not at risk to this type of attack.
+* (10) Not applicable. No downstream elements to neutralize or not neutralize for.
+* (12) Not applicable. Code does not deal with the creation or use of path names of any kind.
+* (14) This issue does not pertain to the specific code in this file. Someone creating and getting feedback on a password should've already been validated at the level the needed to be previous to being at this step in the process.
+* (15) Not applicable. No file uploads possible in this code.
+* (16) Not applicable. No resources accessible through this component.
+* (17) Not applicable. No downstream elements to neutralize or not neutralize for.
+* (18) While this code does give a decent amount of feedback that could potentially help someone trying to bruteforce guess a user's password, the likelihood they would get enough information to guess the stronger password the user selects due to the feedback is incredibly low. That said, if the user ignores the feedback this program provides, such as, "Common names and surnames are easy to guess" and proceeds while being recorded or watched in some capacity by the malicious player, it could be an issue. However, I would put that error more on the user's side than the program's.
 * (19) 
 * (20) 
 * (21) 
