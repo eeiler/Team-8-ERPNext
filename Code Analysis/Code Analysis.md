@@ -4,15 +4,15 @@
 Our strategy for this code analysis was to focus on the areas of ERPNext that we identified potential vulnerabilities in in our previous deliverables. This helped combat our largest concern, which was the sheer size of the code base of any ERP software. While we planned to limit our manual reviews to those previously identified areas, we didn't want to ignore all the other areas completely, so we ran automated code scanners on the entire codebase, as well as the framework its built on Frappe. To be extra safe, we re-ran the scanners on the potentially vulnerable components individually, to make sure we didn't allow them to miss anything specific or miniscule.
 ### Manual Code Review
 CWE Checklist
+
 Going into our manual code review, we created the following CWE checklist so we had concise things to look for in the aforementioned potentially vulnerable areas. Keeping this checklist at the forefront of our process allowed us to move efficiently and effectively through the code base, which led to more concise results than we could've hoped for otherwise. To create the checklist, we compared potential vulnerabilities from our previous deliverables to the [most common CWE's](https://cwe.mitre.org/top25/archive/2020/2020_cwe_top25.html) in an effort to leverage lessons already learned by other in the industry and focus our efforts on the most fruitful areas we could.
-1. Out-of-bounds Write
+
 2. Improper Input Validation
 3. Out-of-bounds Read
 4. Improper Restriction of Operations within the Bounds of a Memory Buffer
-5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 6. Exposure of Sensitive Information to an Unauthorized Actor
 7. Use After Free
-8. Cross-Site Request Forgery (CSRF)
+8. Cross-Site Request Forgery
 9. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 10. Integer Overflow or Wraparound
 11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
@@ -29,7 +29,6 @@ Going into our manual code review, we created the following CWE checklist so we 
 22. Uncontrolled Resource Consumption
 23. Missing Authentication for Critical Function
 24. Missing Authorization
-25. Improper Neutralization of Input During Web Page Generation
 
 ### Automated Code Review with Sonarcloud
 Sonarcloud is the automated tool I, Erik, chose to use for scanning specific code areas for vulnerabilities. As some of our assurance cases and use/misuse cases focused on passwords, I focused this scan to the code integral to password security. ERPNext is built upon the frappe framework.This framework houses all of the code related to authentication, password policy enforcement, and brute force password security. These reports, linked below, are scanned using Sonarcloud. I have scanned the main Python files that handle authentication, passwords, and the enforcement of a password policy.  
