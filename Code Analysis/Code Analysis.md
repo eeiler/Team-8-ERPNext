@@ -41,9 +41,9 @@ Going into our manual code review, we created the following CWE checklist so we 
 
 [Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.No Input within Password.py  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.Password.py does not handle any direct interactions with SQL databases
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* No Input within Password.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Password.py does not handle any direct interactions with SQL databases
 
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
