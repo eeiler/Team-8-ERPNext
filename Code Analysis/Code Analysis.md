@@ -9,7 +9,7 @@ Going into our manual code review, we created the following CWE checklist so we 
 
 1. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')	-
 
-sanitization for XSS handled in another section per Pull #4560
+Sanitization for XSS handled in another section per Pull #4560
 
 2. Improper Input Validation
 3. Out-of-bounds Read*
