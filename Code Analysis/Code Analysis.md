@@ -8,6 +8,7 @@ Going into our manual code review, we created the following CWE checklist so we 
 #### CWE Checklist
 1.	Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 2.	Out-of-bounds Write
+Only affects C, C++, and Assembly class.
 3.	Improper Input Validation
 4.	Out-of-bounds Read*  
 Only affects C and C++.  
