@@ -45,8 +45,8 @@ Only affects C, C++, Java, C#.
 &nbsp;&nbsp;&nbsp;&nbsp;<sub>(CWE Reference)</sub>
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
 * (3) No Input within Password.py  
-* (4) Password.py does not handle any direct interactions with SQL databases
-* (5) requires additional research into thrown exceptions for Frappe, and where paraticular varibles are shown in error logs
+* (6) Password.py does not handle any direct interactions with SQL databases
+* (7) requires additional research into thrown exceptions for Frappe, and where paraticular varibles are shown in error logs
 * (9) Does not interact with a web server directly, works though other programs for validation
 * (10) Does not utilize system commands
 * (12) Does not utilize Path tranversal
