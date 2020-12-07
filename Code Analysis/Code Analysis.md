@@ -40,11 +40,9 @@ Only affects C, C++, Java, C#.
 
 [Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)
 
-* 1.Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
-* 2.No Input within Password.py  
-* 5.Password.py does not handle any direct interactions with SQL databases
-* 6.requires additional research into thrown exceptions for Frappe, adn where paraticular varibles are shown in error logs
-* 8. Does not interact with a web server directly, works though other programs for validation
+* Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
+* No Input within Password.py  
+* Password.py does not handle any direct interactions with SQL databases
 
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
@@ -68,9 +66,10 @@ In the summary of the Sonarcloud reports, I went through each flag that was rais
 ### Planned or ongoing contributions to the upstream open-source project (documentation, design changes, code changes, communications, etc.) These can be based on any of the prior assignments in the class. - DELETE WHEN DONE
 ### Planned Contributions
 We believe the rewriting of the literal as a constant in the auth.py file is a notable contribution that this team can make. It may seem like a smaller change, but many small changes can easily add up. Especially if someone is able to make a necessary change in one spot rather than eight. This contribution will be done by our team writing in the new constant and referencing the constant anywhere that the literal was being used. It will then be explained and sent in a pull request to the main codebase for approval.
+  
+One thing we haven't noticed during our time examining ERPNext is a type of audit log functionality. In delving deeper into this, we found numerous requests for this type of functionality dating back as far as six years (pictured below), which sparked some conversation among developers each time it was brought up. While we don't have the capacity or aptitude to implement this ourselves, we could make a request for it, with the hope being that the core team is in a better place to explore implementing an audit log than they were back then.
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Code%20Analysis/No%20Audit%20Log.PNG)
 
-![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Code%20Analysis/No%20Audit%20Log.PNG)  
-One thing we haven't noticed during our time examining ERPNext is a type of audit log functionality. In delving deeper into this, we found numerous requests for this type of functionality dating back as far as six years, which sparked some conversation among developers each time it was brought up. While we don't have the capacity or aptitude to implement this ourselves, we could make a request for it, with the hope being that the core team is in a better place to explore implementing an audit log than they were back then.
 ### Teamwork/Reflection
 [Team Project Board](https://github.com/eeiler/Team-8-ERPNext/projects/5)   
 Our teamwork has really settled into a good place this semester. We stuck to meeting the first Monday of every week when a deliverable was due, which helped us get a handle on what work we had to get done early. Moving forward with a mutual understanding of that work and our individual strengths helped us split it up as evenly as possible and attack large chunks as a team, or by breaking it up into bite size pieces. Leveraging the midweek professor meeting and usually a short follow up of our own, allowed us to dive into the harder parts of the assignment with some professionally advised direction, which we believe saved us the time of trying and failing with ill-informed strategies like we did in previous iterations. Overall, we could be a little bit more proactive as a unit, and maybe slightly better at problem solving individually, but we're satisfied with our communication, effort, and output. We all agree that we've worked on much less cohesive group projects in the past, and would be happy to work together again any time. 
