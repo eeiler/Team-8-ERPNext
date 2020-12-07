@@ -3,6 +3,33 @@
 ### Code Review Strategy
 Our strategy for this code analysis was to focus on the areas of ERPNext that we identified potential vulnerabilities in in our previous deliverables. This helped combat our largest concern, which was the sheer size of the code base of any ERP software. While we planned to limit our manual reviews to those previously identified areas, we didn't want to ignore all the other areas completely, so we ran automated code scanners on the entire codebase, as well as the framework its built on Frappe. To be extra safe, we re-ran the scanners on the potentially vulnerable components individually, to make sure we didn't allow them to miss anything specific or miniscule.
 ### Manual Code Review
+CWE Checklist
+Going into our manual code review, we created the following CWE checklist so we had concise things to look for in the aforementioned potentially vulnerable areas. Keeping this checklist at the forefront of our process allowed us to move efficiently and effectively through the code base, which led to more concise results than we could've hoped for otherwise.
+1. Out-of-bounds Write
+2. Improper Input Validation
+3. Out-of-bounds Read
+4. Improper Restriction of Operations within the Bounds of a Memory Buffer
+5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')	20.69
+6. Exposure of Sensitive Information to an Unauthorized Actor	19.16
+7. Use After Free	18.87
+8. Cross-Site Request Forgery (CSRF)	17.29
+9. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')	16.44
+10. Integer Overflow or Wraparound	15.81
+11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')	13.67
+12. NULL Pointer Dereference	8.35
+13. Improper Authentication	8.17
+14. Unrestricted Upload of File with Dangerous Type	7.38
+15. Incorrect Permission Assignment for Critical Resource	6.95
+16. Improper Control of Generation of Code ('Code Injection')	6.53
+17. Insufficiently Protected Credentials	5.49
+18. Improper Restriction of XML External Entity Reference	5.33
+19. Use of Hard-coded Credentials	5.19
+20. Deserialization of Untrusted Data	4.93
+21. Improper Privilege Management	4.87
+22. Uncontrolled Resource Consumption	4.14
+23. Missing Authentication for Critical Function	3.85
+24. Missing Authorization
+25. Improper Neutralization of Input During Web Page Generation
 
 ### Automated Code Review with Sonarcloud
 Sonarcloud is the automated tool I, Erik, chose to use for scanning specific code areas for vulnerabilities. As some of our assurance cases and use/misuse cases focused on passwords, I focused this scan to the code integral to password security. ERPNext is built upon the frappe framework.This framework houses all of the code related to authentication, password policy enforcement, and brute force password security. These reports, linked below, are scanned using Sonarcloud. I have scanned the main Python files that handle authentication, passwords, and the enforcement of a password policy.  
