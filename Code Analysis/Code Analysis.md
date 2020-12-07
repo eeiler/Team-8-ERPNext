@@ -45,8 +45,8 @@ Only affects C, C++, Java, C#.
 &nbsp;&nbsp;&nbsp;&nbsp;<sub>(CWE Reference)</sub>
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
 * (3) No Input within Password.py  
-* (6) Password.py does not handle any direct interactions with SQL databases
-* (7) requires additional research into thrown exceptions for Frappe, adn where paraticular varibles are shown in error logs
+* (4) Password.py does not handle any direct interactions with SQL databases
+* (5) requires additional research into thrown exceptions for Frappe, and where paraticular varibles are shown in error logs
 * (9) Does not interact with a web server directly, works though other programs for validation
 * (10) Does not utilize system commands
 * (12) Does not utilize Path tranversal
@@ -63,13 +63,12 @@ Only affects C, C++, Java, C#.
 * (24) Possible issues regarding the password management function could be research further
 * (25) No resources that require Authorization checking with in the file
 
-Keyfindings: I found that a alot of the resources and input validation is handled via other files or the frappe packages, and some of the functions require further investigation within the frappe packages, and support files on whether the correct authentication is checked, in addition to the result of various thrown errors and logs. 
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
 
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560
 * (3)The Password_Strength file focuses mainly on ensuring the user isn't picking a 'weak' password, which it's judging off of things like length, commonality, character use, and frequently used portions like recent dates and common words or phrases. That said, there is no automated input validation in the code of this file. However, the user input to this file is inoperable, or at least the code doesn't take it and execute it in anyway, so I would say this file clears the mark on this CWE.
-* (6)
+* (6) No SQL is requested or made possible to recieve in the code of this file. Pass.
 * (7) 
 * (9) 
 * (10) 
