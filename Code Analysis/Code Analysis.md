@@ -52,7 +52,13 @@ Going into our manual code review, we created the following CWE checklist so we 
 22. Uncontrolled Resource Consumption
 23. Missing Authentication for Critical Function
 24. Missing Authorization
-25. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')	-
+25. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+[Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)
+
+
+[Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
+
 
 ### Automated Code Review with Sonarcloud
 Sonarcloud is the automated tool I, Erik, chose to use for scanning specific code areas for vulnerabilities. As some of our assurance cases and use/misuse cases focused on passwords, I focused this scan to the code integral to password security. ERPNext is built upon the frappe framework.This framework houses all of the code related to authentication, password policy enforcement, and brute force password security. These reports, linked below, are scanned using Sonarcloud. I have scanned the main Python files that handle authentication, passwords, and the enforcement of a password policy.  
