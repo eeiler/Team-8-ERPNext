@@ -11,7 +11,7 @@ Going into our manual code review, we created the following CWE checklist so we 
 2. Improper Input Validation
 3. Out-of-bounds Read*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.
 
 4. Improper Restriction of Operations within the Bounds of a Memory Buffer*
 
