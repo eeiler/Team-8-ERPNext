@@ -10,7 +10,7 @@ Going into our manual code review, we created the following CWE checklist so we 
 1. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 2. Improper Input Validation
 3. Out-of-bounds Read*  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C and C++.  
+&nbsp;&nbsp;&nbsp;Only affects C and C++.  
 4. Improper Restriction of Operations within the Bounds of a Memory Buffer*  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only affects C, C++, and Assembly class.  
 5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
@@ -41,7 +41,7 @@ Going into our manual code review, we created the following CWE checklist so we 
 
 [Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
+* Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* No Input within Password.py  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Password.py does not handle any direct interactions with SQL databases
 
