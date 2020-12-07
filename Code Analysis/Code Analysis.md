@@ -7,7 +7,7 @@ Going into our manual code review, we created the following CWE checklist so we 
 
 #### CWE Checklist <sub><sup>(*Signifies non-applicable CWE's, reason listed following the given CWE)</sup></sub>
 1.	Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
-2.	Out-of-bounds Write  
+2.	Out-of-bounds Write*  
 Only affects C, C++, and Assembly class.  
 3.	Improper Input Validation
 4.	Out-of-bounds Read*  
@@ -44,7 +44,7 @@ Only affects C, C++, Java, C#.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sub>(CWE Reference)</sub>
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
-* (2) No Input within Password.py  
+* (3) No Input within Password.py  
 * (5) Password.py does not handle any direct interactions with SQL databases
 * (6) requires additional research into thrown exceptions for Frappe, adn where paraticular varibles are shown in error logs
 * (8) Does not interact with a web server directly, works though other programs for validation
@@ -54,13 +54,12 @@ Only affects C, C++, Java, C#.
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
 
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560
-* (2) 
-* (5)
+* (3)
 * (6)
-* (8) 
+* (7) 
 * (9) 
-* (11) 
-* (13) 
+* (10) 
+* (12) 
 * (14) 
 * (15) 
 * (16) 
