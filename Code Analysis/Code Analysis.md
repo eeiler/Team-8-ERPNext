@@ -38,6 +38,7 @@ Only affects C, C++, Java, C#.
 25. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')  
 
 
+
 [Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sub>(CWE Reference)</sub>
