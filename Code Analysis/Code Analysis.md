@@ -44,6 +44,7 @@ Only affects C, C++, Java, C#.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sub>(CWE Reference)</sub>
 * (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
+![](https://github.com/eeiler/Team-8-ERPNext/blob/master/Code%20Analysis/inputsan.PNG)
 * (3) No Input within Password.py  
 * (6) Password.py does not handle any direct interactions with SQL databases
 * (7) requires additional research into thrown exceptions for Frappe, and where paraticular varibles are shown in error logs
@@ -62,8 +63,6 @@ Only affects C, C++, Java, C#.
 * (23) the file does not have access to any resource that is not bound by another file or program
 * (24) Possible issues regarding the password management function could be research further
 * (25) No resources that require Authorization checking with in the file
-
-Keyfindings: I found that a alot of the resources and input validation is handled via other files or the frappe packages, and some of the functions require further investigation within the frappe packages, and support files on whether the correct authentication is checked, in addition to the result of various thrown errors and logs. 
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
 
