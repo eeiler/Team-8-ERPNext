@@ -38,15 +38,15 @@ Only affects C, C++, Java, C#.
 25. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')  
 
 
-[Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)
+[Password.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password.py)  
 &nbsp;(CWE Reference)
-* 1. Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
-* 2. No Input within Password.py  
-* 5. Password.py does not handle any direct interactions with SQL databases
-* 6. requires additional research into thrown exceptions for Frappe, adn where paraticular varibles are shown in error logs
-* 8. Does not interact with a web server directly, works though other programs for validation
-* 9. Does not utilize system commands
-* 11. Does not utilize Path tranversal
+* (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560  
+* (2) No Input within Password.py  
+* (5) Password.py does not handle any direct interactions with SQL databases
+* (6) requires additional research into thrown exceptions for Frappe, adn where paraticular varibles are shown in error logs
+* (8) Does not interact with a web server directly, works though other programs for validation
+* (9) Does not utilize system commands
+* (11) Does not utilize Path tranversal
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
 
