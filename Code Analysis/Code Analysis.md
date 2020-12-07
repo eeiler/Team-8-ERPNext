@@ -6,36 +6,36 @@ Our strategy for this code analysis was to focus on the areas of ERPNext that we
 Going into our manual code review, we created the following CWE checklist so we had concise things to look for in the aforementioned potentially vulnerable areas. Keeping this checklist at the forefront of our process allowed us to move efficiently and effectively through the code base, which led to more concise results than we could've hoped for otherwise. To create the checklist, we compared potential vulnerabilities from our previous deliverables to the [most common CWE's](https://cwe.mitre.org/top25/archive/2020/2020_cwe_top25.html) in an effort to leverage lessons already learned by others in the industry and focus our efforts on the most fruitful areas we could.
 
 #### CWE Checklist
-1. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
-2. Improper Input Validation
-3. Out-of-bounds Read*  
+1.	Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+2.	Out-of-bounds Write
+3.	Improper Input Validation
+4.	Out-of-bounds Read*  
 Only affects C and C++.  
-4. Improper Restriction of Operations within the Bounds of a Memory Buffer*  
+5.	Improper Restriction of Operations within the Bounds of a Memory Buffer*  
 Only affects C, C++, and Assembly class.  
-5. Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
-6. Exposure of Sensitive Information to an Unauthorized Actor
-7. Use After Free*  
-Only affects C and C++.  
-8. Cross-Site Request Forgery
-9. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
-10. Integer Overflow or Wraparound*  
+6.	Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+7.	Exposure of Sensitive Information to an Unauthorized Actor
+Use After Free*  
+8.	Only affects C and C++.  
+9.	Cross-Site Request Forgery
+10.	Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+11.	Integer Overflow or Wraparound*  
 Integer overflow is not an issue in Python as Python automatically expands variables when they grow too large for their current state.  
-11. Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')  
-12. NULL Pointer Dereference*  
+12.	Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')  
+13.	NULL Pointer Dereference*  
 Only affects C, C++, Java, C#.
-13. Improper Authentication
-14. Unrestricted Upload of File with Dangerous Type
-15. Incorrect Permission Assignment for Critical Resource
-16. Improper Control of Generation of Code ('Code Injection')
-17. Insufficiently Protected Credentials
-18. Improper Restriction of XML External Entity Reference
-19. Use of Hard-coded Credentials
-20. Deserialization of Untrusted Data
-21. Improper Privilege Management
-22. Uncontrolled Resource Consumption
-23. Missing Authentication for Critical Function
-24. Missing Authorization
-25. Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')  
+14.	Improper Authentication
+15.	Unrestricted Upload of File with Dangerous Type
+16.	Incorrect Permission Assignment for Critical Resource
+17.	Improper Control of Generation of Code ('Code Injection')
+18.	Insufficiently Protected Credentials
+19.	Improper Restriction of XML External Entity Reference
+20.	Use of Hard-coded Credentials
+21.	Deserialization of Untrusted Data
+22.	Improper Privilege Management
+23.	Uncontrolled Resource Consumption
+24.	Missing Authentication for Critical Function
+25.	Missing Authorization
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Only affects C, C++, Java, C#.
 
 [Password_Strength.py](https://github.com/frappe/frappe/blob/v12.12.0/frappe/utils/password_strength.py)
 
-* (1) 
+* (1) Input Sanitization for XSS in Password.py is handled in another section per Pull #4560
 * (2) 
 * (5)
 * (6)
